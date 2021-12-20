@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 120vh;
+    background-color:  hsl(217, 54%, 11%);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content {
+    position: relative;
+    background-color: hsl(214deg 50% 16%);
+    width: 350px;
+    height: 600px;
+    border-radius: 26px;
+    box-shadow: 0 20px 10px 20px #0c1729 , 0 30px 0 50px hsl(214deg 60% 7% / 10%);
+}
+.container .content img {
+    position: absolute;
+    width: calc(350px - 40px);
+    height: 300px;
+    border-radius: 10px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+.container .content .hover-effect {
+    display:none;
+    position: absolute;
+    width: 310px;
+    height: 300px;
+    background-color: hsl(178 100% 50% / 0.5);
+    border-radius: 10px;
+    top: 20px;
+    left: 20px;
+}
+.container .content .hover-effect img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40.5%;
+    left: 42.75%;
+}
+.container .content img:hover + .hover-effect {
+    display: block;
+}
+
+.container .content h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: sans-serif;
+    Font-size: 20px;
+    position: absolute;
+    top: 58%;
+    left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.container .content h1:hover {
+    color: hsl(178 100% 50% );
+}
+.container .content p {
+    font-size: 18px;
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    font-family: sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+.wallet-ethereum {
+    position: absolute;
+    top: 77%;
+    left: 45px;
+    color: hsl(178, 100%, 50%);
+    font-family: sans-serif;
+}
+.wallet-ethereum img {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    transform: translate(-190px , -160px) scale(0.05 , 0.07);
+}
+.joining-time {
+    position: absolute;
+    top: 77%;
+    right: 25%;
+}
+.joining-time img {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    transform: translate(-210px , -160px) scale(0.07 , 0.07);
+}
+.container .content .joining-time > p {
+    width: 83px;
+    margin-left: -40px;
+}
+.light-line {
+    color: transparent;
+    position: absolute;
+    top: 85%;
+    width: calc(100% - 12.5%);
+    left: 6.25%;
+    border-top: 0.05px solid hsl(217deg 32% 27%) ;
+}
+.costumer {
+    position: absolute;
+    position: absolute;
+    top: 87.5%;
+}
+.container .content .costumer img {
+    transform: translate(-130px , -145px) scale(0.15);
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+.costumer .costumer-name {
+    position: absolute;
+    width: 250px;
+    top: 15px;
+    left: 80px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.costumer .costumer-name:hover {
+    color: hsl(178 100% 50% );
+}
+.container .content .costumer .costumer-name span {
+    color: hsl(215, 51%, 70%);
+}
+@media (max-width: 375px) {
+    .container .content {
+        width: 335px;
+        height: calc(100% - 15%);
+    }
+    .container .content img {
+        width: calc(335px - 40px);
+        height: calc(100% - 50%);
+    }
+    .container .content .hover-effect {
+        width: 295px;
+        height: calc(100% - 50%);
+    }
+    .container .content .hover-effect img {
+        width: 50px;
+        height: 50px;
+        top: 40%;
+        left: 42.5%;
+    }
+    .container .content h1 {
+        top: 58.5%;
+    }
+    .container .content p {
+        top: 67.5%;
+    }
+    .container .content .wallet-ethereum {
+        top: 79%;
+        font-weight: bold;
+    }
+    .container .content .wallet-ethereum img {
+        height: 17px;
+        transform: translate(-185px , -18px) scale(0.05 , 1.5);
+        margin-right: 5px;
+    }
+    .container .content .joining-time {
+        top: 79%;
+    }
+    .container .content .joining-time img {
+        height: 20px;
+        width: 20px;
+        transform: translate(-66px , -20px) ;
+    }
+    .light-line {
+        top: 86.5%;
+    }
+    .container .content .costumer {
+        top: 88.5%;
+    }
+    .container .content .costumer img {
+        width: 25px;
+        height: 25px;
+        transform: translate(7.5px , -5px) scale(1.5 , 1.5);
+        border: 1px solid #fff;
+    }
+    .container .content .costumer .costumer-name {
+        word-spacing: 1px;
+    }
+    
+
+}
+
